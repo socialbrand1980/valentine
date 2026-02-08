@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9ecf, #ff4fa3);
+}
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.button-area {
+  position: relative;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.no {
+  background: #ff2e8a;
+  color: white;
+  box-shadow: 0 8px 20px rgba(255,46,138,0.4);
+}
+
+
+button {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(.34,1.56,.64,1);
+}
+
+.yes {
+  background: white;
+  color: #ff2e8a;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+}
+
+.yes:hover {
+  transform: scale(1.05);
+}
+
+.no {
+  position: absolute;
+  top: 90px;
+  left: 60%;
+  background: #ff2e8a;
+  color: white;
+  box-shadow: 0 8px 20px rgba(255,46,138,0.4);
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 18px;
+  display: none;
+}
